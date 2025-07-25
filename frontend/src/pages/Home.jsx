@@ -1,18 +1,19 @@
-import MovieCard from '../components/Movie-Card';
-import { useState } from 'react';
+import MovieCard from "../components/Movie-Card"
+import { useState } from "react"
+import "../css/Home.css"
 
 function Home() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("")
   const movies = [
-    { id: 1, title: 'John Wick', release_date: '2020' },
-    { id: 2, title: 'Terminator', release_date: '1994' },
-    { id: 3, title: 'Legally Blonde', release_date: '2023' },
-    { id: 4, title: 'Aquaman', release_date: '2021' },
-  ];
+    { id: 1, title: "John Wick", release_date: "2020" },
+    { id: 2, title: "Terminator", release_date: "1994" },
+    { id: 3, title: "Legally Blonde", release_date: "2023" },
+    { id: 4, title: "Aquaman", release_date: "2021" },
+  ]
 
   function handleSearch(e) {
-    e.preventDefault();
-    alert(searchQuery);
+    e.preventDefault()
+    alert(searchQuery)
   }
 
   return (
@@ -35,7 +36,7 @@ function Home() {
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
